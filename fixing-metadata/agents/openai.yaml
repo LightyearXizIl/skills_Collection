@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fixing Metadata"
+  short_description: "Audit and fix page metadata and social previews"
+  default_prompt: "Use $fixing-metadata to audit and correct site titles, canonical URLs, social cards, icons, and structured metadata."

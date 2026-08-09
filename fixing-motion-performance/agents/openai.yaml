@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fixing Motion Performance"
+  short_description: "Audit and fix animation performance problems"
+  default_prompt: "Use $fixing-motion-performance to audit and fix jank or unnecessary rendering work in these animations."

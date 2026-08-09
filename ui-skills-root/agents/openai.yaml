@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Skills Router"
+  short_description: "Route UI work to the smallest useful skill set"
+  default_prompt: "Use $ui-skills-root to route this UI task to the smallest useful set of UI skills."

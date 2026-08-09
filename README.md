@@ -17,6 +17,13 @@
 | [svg-logo-designer](./svg-logo-designer/) | 从设计方向到可编辑 SVG 变体的 Logo 工作流，并附带安全性、可访问性和结构校验脚本 | Python 3（校验脚本） |
 | [uiverse-galaxy](./uiverse-galaxy/) | 在 Uiverse Galaxy 上定位真实组件源码，保留作者归属后适配到现有 Web 项目 | 项目原有前端技术栈；浏览器或网络按任务使用 |
 | [liquid-glass-react](./liquid-glass-react/) | 在 React 项目中集成并验证 `liquid-glass-react`，包含浏览器回退、性能和无障碍检查 | React 18+；项目当前包管理器 |
+| [baseline-ui](./baseline-ui/) | 用明确的间距、层级、字体、布局、交互和动画规则快速清理 UI | 当前项目技术栈；涉及 JS 动画时使用 `motion/react` |
+| [create-design-md](./create-design-md/) | 从代码仓库或真实网站证据创建、更新可验证的 `DESIGN.md` | Node.js/npm、`@google/design.md`；URL 模式需要浏览器 |
+| [fixing-accessibility](./fixing-accessibility/) | 审查并修复 HTML 语义、ARIA、键盘、焦点、表单错误和对比度问题 | 当前项目技术栈；浏览器与审查工具按任务使用 |
+| [fixing-metadata](./fixing-metadata/) | 修复标题、canonical、robots、社交卡片、图标、manifest 和 JSON-LD | 当前项目技术栈；分享卡片验证需要真实 URL |
+| [fixing-motion-performance](./fixing-motion-performance/) | 审查并修复布局抖动、滚动驱动、滤镜和动画循环等性能问题 | 当前项目技术栈；浏览器性能工具按任务使用 |
+| [improve-ui](./improve-ui/) | 基于产品真实设计证据进行只读 UI 审计，并为选定问题生成实施计划 | 无固定依赖；只在用户授权时使用渲染证据 |
+| [ui-skills-root](./ui-skills-root/) | 通过官方 CLI 把 UI 任务路由到最小可用 Skill 集 | Node.js/npm、`npx ui-skills`、网络 |
 
 ## 安装方法
 
@@ -71,6 +78,13 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 用 svg-logo-designer 设计三个可编辑的 SVG Logo 方向
 用 uiverse-galaxy 找一个合适的加载动画并适配现有样式
 用 liquid-glass-react 为卡片加入兼容性良好的液态玻璃效果
+用 baseline-ui 清理这个页面的基础 UI 问题
+用 create-design-md 从当前仓库创建 DESIGN.md
+用 fixing-accessibility 修复这个表单的键盘和焦点问题
+用 fixing-metadata 审查网站的 SEO 与分享卡片
+用 fixing-motion-performance 排查滚动动画卡顿
+用 improve-ui 只读审计产品工作台并提出有证据的问题
+用 ui-skills-root 为这个 UI 任务选择最合适的专项 Skill
 ```
 
 ## 第三方来源与授权
@@ -83,6 +97,7 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 - `svg-logo-designer`：参考 [rknall/claude-skills](https://github.com/rknall/claude-skills) 中同名功能重新独立编写。检查时上游未提供明确许可证，因此没有复制或再分发其原始 Skill 内容；本合集版本采用独立 MIT License。
 - `uiverse-galaxy`：面向 [uiverse-io/galaxy](https://github.com/uiverse-io/galaxy) 创建的适配 Skill，保留上游 MIT License 和 README 快照；当前快照为 `adbd2adde0a299a3956ea288fb444ec01891ca41`。
 - `liquid-glass-react`：面向 [rdev/liquid-glass-react](https://github.com/rdev/liquid-glass-react) 创建的适配 Skill，保留上游 MIT License、README 和包信息快照；当前快照为 `ac48eab18d1f7f444ae30002d240cae29c863a21`。
+- `baseline-ui`、`create-design-md`、`fixing-accessibility`、`fixing-metadata`、`fixing-motion-performance`、`improve-ui`、`ui-skills-root`：安装自 [ibelick/ui-skills](https://github.com/ibelick/ui-skills)，采用 MIT License，固定快照为 `2b3a114a3fcff079d73639a21710c595d4700a74`。其中 `fixing-metadata` 仅将上游不兼容的顶层 `version` 移入 `metadata.version`，其余技能正文保持上游内容。
 
 各技能目录内的独立许可证和归属说明优先适用于相应第三方内容。
 
@@ -93,7 +108,7 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 1. 每个技能一个目录，目录名即技能名，含 `SKILL.md`（frontmatter 必须带 `name` + `description`）
 2. 目录内必须有 `README.md`：说明**这个技能是干嘛的**、使用方法、所需 API key 及配置方式
 3. **禁止包含任何 API key、token、密码**——一律通过环境变量注入
-4. 依赖保持轻量（标准库 + `requests` 级别），Python 3 可运行
+4. 依赖保持必要且明确；不得为了一个 Skill 无关地迁移项目框架或工具链
 
 ## License
 

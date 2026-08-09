@@ -1,0 +1,4 @@
+interface:
+  display_name: "Baseline UI"
+  short_description: "Apply a clean, opinionated baseline to UI work"
+  default_prompt: "Use $baseline-ui to clean up this interface with consistent spacing, hierarchy, typography, interaction, and performance rules."

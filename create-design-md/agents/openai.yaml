@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create DESIGN.md"
+  short_description: "Extract an evidence-based product design system"
+  default_prompt: "Use $create-design-md to create or update DESIGN.md from the available repository or rendered website evidence."
