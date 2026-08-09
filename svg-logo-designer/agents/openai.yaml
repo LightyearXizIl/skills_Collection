@@ -1,0 +1,4 @@
+interface:
+  display_name: "SVG Logo Designer"
+  short_description: "Create original production-ready SVG logo systems"
+  default_prompt: "Use $svg-logo-designer to create an original SVG logo system for this brand."

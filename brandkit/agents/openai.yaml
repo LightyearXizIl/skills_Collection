@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brandkit"
+  short_description: "Generate premium brand identity boards and systems"
+  default_prompt: "Use $brandkit to create a premium brand identity board from this brief."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canvas UI"
+  short_description: "Install and use Canvas UI WebGL components"
+  default_prompt: "Use $canvas-ui to add a suitable Canvas UI effect to this project."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Uiverse Galaxy"
+  short_description: "Find and adapt MIT UI elements from Uiverse Galaxy"
+  default_prompt: "Use $uiverse-galaxy to find and adapt a suitable UI element for this project."

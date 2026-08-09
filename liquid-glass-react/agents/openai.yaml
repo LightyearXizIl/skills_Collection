@@ -1,0 +1,4 @@
+interface:
+  display_name: "Liquid Glass React"
+  short_description: "Implement and validate liquid glass React effects"
+  default_prompt: "Use $liquid-glass-react to add an accessible liquid glass effect to this React UI."
