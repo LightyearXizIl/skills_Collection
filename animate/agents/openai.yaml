@@ -1,0 +1,4 @@
+interface:
+  display_name: "Animate"
+  short_description: "Build deliberate, production-ready web animations"
+  default_prompt: "Use $animate to design and implement this animation with the right purpose, properties, timing, interruption, and exit behavior."

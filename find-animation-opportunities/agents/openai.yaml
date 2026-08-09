@@ -1,0 +1,4 @@
+interface:
+  display_name: "Find Animation Opportunities"
+  short_description: "Find high-value places to add restrained motion"
+  default_prompt: "Use $find-animation-opportunities to inspect this interface and propose only the motion opportunities that add real value."

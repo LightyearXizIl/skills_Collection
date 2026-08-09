@@ -24,6 +24,15 @@
 | [fixing-motion-performance](./fixing-motion-performance/) | 审查并修复布局抖动、滚动驱动、滤镜和动画循环等性能问题 | 当前项目技术栈；浏览器性能工具按任务使用 |
 | [improve-ui](./improve-ui/) | 基于产品真实设计证据进行只读 UI 审计，并为选定问题生成实施计划 | 无固定依赖；只在用户授权时使用渲染证据 |
 | [ui-skills-root](./ui-skills-root/) | 通过官方 CLI 把 UI 任务路由到最小可用 Skill 集 | Node.js/npm、`npx ui-skills`、网络 |
+| [animate](./animate/) | 从动画目的到属性、曲线、时长、中断和退出，设计并实现可上线 Web 动效 | 当前项目的前端与动画技术栈 |
+| [animation-vocabulary](./animation-vocabulary/) | 把自然语言描述反查为准确的动画、手势和运动效果术语 | 无固定依赖 |
+| [apple-design](./apple-design/) | 把 Apple 的手势、弹簧、动量、材质、字体和流体交互原则转译到 Web | 当前项目技术栈；目标设备与浏览器验证 |
+| [emil-design-eng](./emil-design-eng/) | 应用 Emil Kowalski 的 UI 精修、组件与动画决策经验 | 当前项目技术栈 |
+| [find-animation-opportunities](./find-animation-opportunities/) | 只读寻找真正值得加入动画的界面时刻，并给出精确建议 | 可读取的源码或用户授权的渲染证据 |
+| [improve-animations](./improve-animations/) | 只读审计代码库动效，输出有优先级的问题和独立实施计划 | 可读取的项目源码 |
+| [pick-ui-library](./pick-ui-library/) | 从精选清单中为具体前端任务选择合适的 UI 库 | 显式调用；网络用于核对当前维护和兼容状态 |
+| [prototype](./prototype/) | 构建多个真正不同的可运行 UI 方案，并通过可视化选择器比较 | 显式调用；当前项目技术栈和浏览器 |
+| [review-animations](./review-animations/) | 按严格设计工程标准专项评审动画代码 | 显式调用；待评审源码和可选浏览器证据 |
 
 ## 安装方法
 
@@ -85,6 +94,15 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 用 fixing-motion-performance 排查滚动动画卡顿
 用 improve-ui 只读审计产品工作台并提出有证据的问题
 用 ui-skills-root 为这个 UI 任务选择最合适的专项 Skill
+用 animate 为这个弹窗设计并实现进入与退出动画
+用 animation-vocabulary 告诉我这个回弹效果的准确名称
+用 apple-design 设计一个可中断的拖拽底部面板
+用 emil-design-eng 改善这个组件的完成度
+用 find-animation-opportunities 找出真正值得加入动效的地方
+用 improve-animations 审计整个应用的动画系统
+显式使用 pick-ui-library 为这个项目选择 Toast 库
+显式使用 prototype 构建四种不同的 Toast 交互方案
+显式使用 review-animations 评审这次动画改动
 ```
 
 ## 第三方来源与授权
@@ -98,6 +116,7 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 - `uiverse-galaxy`：面向 [uiverse-io/galaxy](https://github.com/uiverse-io/galaxy) 创建的适配 Skill，保留上游 MIT License 和 README 快照；当前快照为 `adbd2adde0a299a3956ea288fb444ec01891ca41`。
 - `liquid-glass-react`：面向 [rdev/liquid-glass-react](https://github.com/rdev/liquid-glass-react) 创建的适配 Skill，保留上游 MIT License、README 和包信息快照；当前快照为 `ac48eab18d1f7f444ae30002d240cae29c863a21`。
 - `baseline-ui`、`create-design-md`、`fixing-accessibility`、`fixing-metadata`、`fixing-motion-performance`、`improve-ui`、`ui-skills-root`：安装自 [ibelick/ui-skills](https://github.com/ibelick/ui-skills)，采用 MIT License，固定快照为 `2b3a114a3fcff079d73639a21710c595d4700a74`。其中 `fixing-metadata` 仅将上游不兼容的顶层 `version` 移入 `metadata.version`，其余技能正文保持上游内容。
+- `animate`、`animation-vocabulary`、`apple-design`、`emil-design-eng`、`find-animation-opportunities`、`improve-animations`、`pick-ui-library`、`prototype`、`review-animations`：安装自 [emilkowalski/skills](https://github.com/emilkowalski/skills)，采用 MIT License，固定快照为 `de33dbed000212b54400a33767d1e4d03654db2a`。`pick-ui-library`、`prototype`、`review-animations` 的上游 `disable-model-invocation: true` 已等价迁移到 `agents/openai.yaml` 的 `policy.allow_implicit_invocation: false`；正文不变。
 
 各技能目录内的独立许可证和归属说明优先适用于相应第三方内容。
 

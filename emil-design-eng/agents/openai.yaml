@@ -1,0 +1,4 @@
+interface:
+  display_name: "Emil Design Engineering"
+  short_description: "Apply Emil Kowalski design engineering craft"
+  default_prompt: "Use $emil-design-eng to improve this interface with Emil Kowalski design engineering principles."
