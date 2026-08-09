@@ -1,0 +1,4 @@
+interface:
+  display_name: "Astryx"
+  short_description: "Build accessible React interfaces with Astryx"
+  default_prompt: "Use $astryx to build an accessible React interface with Astryx components."

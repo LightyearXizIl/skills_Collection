@@ -11,12 +11,13 @@
 | [DeepSeek_Visualmodel](./DeepSeek_Visualmodel/) | 给无原生视觉的大模型（如 DeepSeek）"看图"：把图片路由到外部视觉模型，返回中文文字描述。支持智谱 / Gemini / SiliconFlow / 百炼 4 家视觉服务 | Python 3、requests |
 | [finesse-ui](./finesse-ui/) | 构建和审查高完成度 Web 界面，覆盖品牌站、产品后台、数据可视化与电商页面，并提供可复用示例和设计检查规则 | Node.js（检测脚本）；具体项目的前端技术栈 |
 | [web-clone](./web-clone/) | 网站复刻与逆向分析方法论：优先获取真实源码，覆盖静态站、React/Vue/Next、多页面及 WebGL/Canvas 重前端站点 | Node.js；Playwright/浏览器及 wget、gh 等按任务选用工具 |
+| [astryx](./astryx/) | 使用 Meta Astryx 设计系统构建无障碍 React 界面；通过项目实际 CLI 查询组件、模板、Token 和主题，并支持上游组件与文档贡献 | React 19+；Astryx 与 StyleX 包按项目安装 |
 
 ## 安装方法
 
 ### 方式一：复制技能目录
 
-把所需技能目录（如 `DeepSeek_Visualmodel/`、`finesse-ui/` 或 `web-clone/`）整个复制到你的技能目录：
+把所需技能目录（如 `DeepSeek_Visualmodel/`、`finesse-ui/`、`web-clone/` 或 `astryx/`）整个复制到你的技能目录：
 
 - **Reasonix 项目级**：`<工作区>/.reasonix/skills/`
 - **Reasonix 全局**：`%AppData%/reasonix/skills/`（或 `<Reasonix home>/skills/`）
@@ -59,12 +60,14 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 ```text
 用 finesse-ui 设计一个高完成度的数据看板
 用 web-clone 复刻这个网站：https://example.com
+用 astryx 构建一个无障碍 React 管理后台
 ```
 
 ## 第三方来源与授权
 
 - `finesse-ui`：来源于 [zhenwusw/finesse-skill](https://github.com/zhenwusw/finesse-skill)，技能主体采用 MIT License；其示例中附带的 GSAP/ScrollTrigger 文件遵循文件头标注的 [GreenSock Standard License](https://gsap.com/standard-license/)。
 - `web-clone`：来源于 [Jane-xiaoer/claude-skill-web-clone](https://github.com/Jane-xiaoer/claude-skill-web-clone)，采用 MIT License。
+- `astryx`：适配自 [facebook/astryx](https://github.com/facebook/astryx) 的官方 Agent/Claude 指令与文档，保留 Meta 的 MIT License；当前快照为 `077087f68d5e5fc12b39218a67dfa6a29fa04bcd`。
 
 各技能目录内的独立许可证和归属说明优先适用于相应第三方内容。
 
