@@ -33,6 +33,10 @@
 | [pick-ui-library](./pick-ui-library/) | 从精选清单中为具体前端任务选择合适的 UI 库 | 显式调用；网络用于核对当前维护和兼容状态 |
 | [prototype](./prototype/) | 构建多个真正不同的可运行 UI 方案，并通过可视化选择器比较 | 显式调用；当前项目技术栈和浏览器 |
 | [review-animations](./review-animations/) | 按严格设计工程标准专项评审动画代码 | 显式调用；待评审源码和可选浏览器证据 |
+| [ask-sonner](./ask-sonner/) | 安装、配置、样式化和排查 Sonner React Toast | React、Sonner |
+| [video-shotcraft](./video-shotcraft/) | 用镜头配方、Remotion 示例、模板和音频资产制作电影感产品宣传视频 | Node.js、Remotion、FFmpeg；完整资源包较大 |
+| DeterminFlow 内置 Skill（6 个） | Agent 定义、自动化、提示模板、脚本库、规则和工作流配置指南 | DeterminFlow 运行时；见各目录 |
+| [OpenMontage Skill 集](./OPENMONTAGE_SKILLS.md)（82 个） | 视频制作、媒体处理、语音、图像、三维、Remotion 与服务集成工作流 | 依具体 Skill 而定；部分需要第三方服务或本地工具 |
 
 ## 安装方法
 
@@ -103,6 +107,10 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 显式使用 pick-ui-library 为这个项目选择 Toast 库
 显式使用 prototype 构建四种不同的 Toast 交互方案
 显式使用 review-animations 评审这次动画改动
+用 ask-sonner 排查这个 React 项目里重复出现的 Toast
+用 video-shotcraft 为桌面产品制作一支宣传视频
+使用 workflow-guide 编写 DeterminFlow 工作流
+使用 video-edit 剪辑并导出产品演示视频
 ```
 
 ## 第三方来源与授权
@@ -117,8 +125,12 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 - `liquid-glass-react`：面向 [rdev/liquid-glass-react](https://github.com/rdev/liquid-glass-react) 创建的适配 Skill，保留上游 MIT License、README 和包信息快照；当前快照为 `ac48eab18d1f7f444ae30002d240cae29c863a21`。
 - `baseline-ui`、`create-design-md`、`fixing-accessibility`、`fixing-metadata`、`fixing-motion-performance`、`improve-ui`、`ui-skills-root`：安装自 [ibelick/ui-skills](https://github.com/ibelick/ui-skills)，采用 MIT License，固定快照为 `2b3a114a3fcff079d73639a21710c595d4700a74`。其中 `fixing-metadata` 仅将上游不兼容的顶层 `version` 移入 `metadata.version`，其余技能正文保持上游内容。
 - `animate`、`animation-vocabulary`、`apple-design`、`emil-design-eng`、`find-animation-opportunities`、`improve-animations`、`pick-ui-library`、`prototype`、`review-animations`：安装自 [emilkowalski/skills](https://github.com/emilkowalski/skills)，采用 MIT License，固定快照为 `de33dbed000212b54400a33767d1e4d03654db2a`。`pick-ui-library`、`prototype`、`review-animations` 的上游 `disable-model-invocation: true` 已等价迁移到 `agents/openai.yaml` 的 `policy.allow_implicit_invocation: false`；正文不变。
+- `ask-sonner`：安装自 [emilkowalski/skills](https://github.com/emilkowalski/skills)，采用 MIT License，固定快照为 `78761e1b57f97dce65b983d640c70a68f39e8163`。
+- `video-shotcraft`：完整安装自 [Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)，采用 Apache-2.0，固定快照为 `41ee360d82f4c491ba9d88a24a4add7d8ff1cf8b`。其音频、示例素材和镜头归属说明以目录内 `assets/audio/ATTRIBUTION.md`、`references/shots/ATTRIBUTION.md` 为准。
+- `agent-definition-guide`、`automation-guide`、`prompt-template-guide`、`script-library-guide`、`skill-rule-authoring-guide`、`workflow-guide`：安装自 [alikon-art/DeterminFlow](https://github.com/alikon-art/DeterminFlow)，固定快照为 `fe217de1e58bf53581cdfe973e134902d8ee062a`，均遵循目录内 AGPLv3。
+- [OpenMontage Skill 集](./OPENMONTAGE_SKILLS.md)：从 [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) 的 `.agents/skills` 收录 82 个实际 Skill 目录，固定快照为 `4eab34c5cfcccaa4f1970554928feccce73ee930`，均遵循目录内 AGPLv3。`gsap/` 是上游容器目录而非 Skill；`.claude/skills/video_toolkit` 与 `video-toolkit` 内容相同，因此未重复收录。12 个仅有 frontmatter 兼容问题的目录做了最小字段清理或 YAML 转义，正文未改。
 
-各技能目录内的独立许可证和归属说明优先适用于相应第三方内容。
+各技能目录内的独立许可证和归属说明优先适用于相应第三方内容。根目录 MIT 许可证只适用于本合集自行创作的内容及未另行声明的部分，**不覆盖** `video-shotcraft` 的 Apache-2.0 内容或 DeterminFlow、OpenMontage 的 AGPLv3 内容；这些目录作为具有独立许可证的第三方聚合内容分发。
 
 ## 新增技能规范
 
@@ -128,6 +140,7 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 2. 目录内必须有 `README.md`：说明**这个技能是干嘛的**、使用方法、所需 API key 及配置方式
 3. **禁止包含任何 API key、token、密码**——一律通过环境变量注入
 4. 依赖保持必要且明确；不得为了一个 Skill 无关地迁移项目框架或工具链
+5. 收录第三方内容时必须保留其独立许可证、来源提交和归属/资产说明；不得把子目录内容错误地宣称为根目录 MIT
 
 ## License
 
