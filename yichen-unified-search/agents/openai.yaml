@@ -1,0 +1,4 @@
+interface:
+  display_name: "逸尘统一搜索"
+  short_description: "统一路由公共网页、垂直领域与只读社交平台搜索并交接候选结果"
+  default_prompt: "Use $yichen-unified-search to search the web and relevant public platforms, then return normalized candidates."

@@ -37,6 +37,7 @@
 | [video-shotcraft](./video-shotcraft/) | 用镜头配方、Remotion 示例、模板和音频资产制作电影感产品宣传视频 | Node.js、Remotion、FFmpeg；完整资源包较大 |
 | DeterminFlow 内置 Skill（6 个） | Agent 定义、自动化、提示模板、脚本库、规则和工作流配置指南 | DeterminFlow 运行时；见各目录 |
 | [OpenMontage Skill 集](./OPENMONTAGE_SKILLS.md)（82 个） | 视频制作、媒体处理、语音、图像、三维、Remotion 与服务集成工作流 | 依具体 Skill 而定；部分需要第三方服务或本地工具 |
+| [Yichen Skill 集](./YICHEN_SKILLS.md)（19 个 Skill + 1 个插件） | 写作、研究、内容归档、ASR、社交收藏、微信/企微本地工作流和 X 内容制作 | 依具体 Skill 而定；部分仅支持 macOS 或需要浏览器登录态、第三方 CLI |
 
 ## 安装方法
 
@@ -129,8 +130,9 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 - `video-shotcraft`：完整安装自 [Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)，采用 Apache-2.0，固定快照为 `41ee360d82f4c491ba9d88a24a4add7d8ff1cf8b`。其音频、示例素材和镜头归属说明以目录内 `assets/audio/ATTRIBUTION.md`、`references/shots/ATTRIBUTION.md` 为准。
 - `agent-definition-guide`、`automation-guide`、`prompt-template-guide`、`script-library-guide`、`skill-rule-authoring-guide`、`workflow-guide`：安装自 [alikon-art/DeterminFlow](https://github.com/alikon-art/DeterminFlow)，固定快照为 `fe217de1e58bf53581cdfe973e134902d8ee062a`，均遵循目录内 AGPLv3。
 - [OpenMontage Skill 集](./OPENMONTAGE_SKILLS.md)：从 [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) 的 `.agents/skills` 收录 82 个实际 Skill 目录，固定快照为 `4eab34c5cfcccaa4f1970554928feccce73ee930`，均遵循目录内 AGPLv3。`gsap/` 是上游容器目录而非 Skill；`.claude/skills/video_toolkit` 与 `video-toolkit` 内容相同，因此未重复收录。12 个仅有 frontmatter 兼容问题的目录做了最小字段清理或 YAML 转义，正文未改。
+- [Yichen Skill 集](./YICHEN_SKILLS.md)：从 [mcncarl/yichen-skills](https://github.com/mcncarl/yichen-skills) 收录 19 个顶层 Skill 和 `yichen-grok-consult` Codex 插件，固定快照为 `2f916dc58d5d8abb563209d76ca6ba059ef0be3c`。上游采用个人学习与非商业使用许可；仓库操作者确认已获得作者对本次公开收录的书面授权。各目录继续受上游许可约束，授权不等于改为 MIT，也不扩大下游用户权限。
 
-各技能目录内的独立许可证和归属说明优先适用于相应第三方内容。根目录 MIT 许可证只适用于本合集自行创作的内容及未另行声明的部分，**不覆盖** `video-shotcraft` 的 Apache-2.0 内容或 DeterminFlow、OpenMontage 的 AGPLv3 内容；这些目录作为具有独立许可证的第三方聚合内容分发。
+各技能目录内的独立许可证和归属说明优先适用于相应第三方内容。根目录 MIT 许可证只适用于本合集自行创作的内容及未另行声明的部分，**不覆盖** `video-shotcraft` 的 Apache-2.0 内容、DeterminFlow/OpenMontage 的 AGPLv3 内容或 Yichen Skills 的个人学习与非商业使用许可内容；这些目录作为具有独立许可证的第三方聚合内容分发。
 
 ## 新增技能规范
 
