@@ -34,6 +34,7 @@
 | [prototype](./prototype/) | 构建多个真正不同的可运行 UI 方案，并通过可视化选择器比较 | 显式调用；当前项目技术栈和浏览器 |
 | [review-animations](./review-animations/) | 按严格设计工程标准专项评审动画代码 | 显式调用；待评审源码和可选浏览器证据 |
 | [ask-sonner](./ask-sonner/) | 安装、配置、样式化和排查 Sonner React Toast | React、Sonner |
+| [shipswift](./shipswift/) | 为 iOS/macOS 项目查找并集成生产可用的 SwiftUI 动画、图表、组件和完整功能模块配方 | Xcode、Swift、SwiftUI；免费配方无需 API key，Pro 配方需官方 MCP |
 | [video-shotcraft](./video-shotcraft/) | 用镜头配方、Remotion 示例、模板和音频资产制作电影感产品宣传视频 | Node.js、Remotion、FFmpeg；完整资源包较大 |
 | DeterminFlow 内置 Skill（6 个） | Agent 定义、自动化、提示模板、脚本库、规则和工作流配置指南 | DeterminFlow 运行时；见各目录 |
 | [OpenMontage Skill 集](./OPENMONTAGE_SKILLS.md)（82 个） | 视频制作、媒体处理、语音、图像、三维、Remotion 与服务集成工作流 | 依具体 Skill 而定；部分需要第三方服务或本地工具 |
@@ -109,6 +110,7 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 显式使用 prototype 构建四种不同的 Toast 交互方案
 显式使用 review-animations 评审这次动画改动
 用 ask-sonner 排查这个 React 项目里重复出现的 Toast
+用 shipswift 给 SwiftUI 页面加入 shimmer 加载效果
 用 video-shotcraft 为桌面产品制作一支宣传视频
 使用 workflow-guide 编写 DeterminFlow 工作流
 使用 video-edit 剪辑并导出产品演示视频
@@ -127,6 +129,7 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 - `baseline-ui`、`create-design-md`、`fixing-accessibility`、`fixing-metadata`、`fixing-motion-performance`、`improve-ui`、`ui-skills-root`：安装自 [ibelick/ui-skills](https://github.com/ibelick/ui-skills)，采用 MIT License，固定快照为 `2b3a114a3fcff079d73639a21710c595d4700a74`。其中 `fixing-metadata` 仅将上游不兼容的顶层 `version` 移入 `metadata.version`，其余技能正文保持上游内容。
 - `animate`、`animation-vocabulary`、`apple-design`、`emil-design-eng`、`find-animation-opportunities`、`improve-animations`、`pick-ui-library`、`prototype`、`review-animations`：安装自 [emilkowalski/skills](https://github.com/emilkowalski/skills)，采用 MIT License，固定快照为 `de33dbed000212b54400a33767d1e4d03654db2a`。`pick-ui-library`、`prototype`、`review-animations` 的上游 `disable-model-invocation: true` 已等价迁移到 `agents/openai.yaml` 的 `policy.allow_implicit_invocation: false`；正文不变。
 - `ask-sonner`：安装自 [emilkowalski/skills](https://github.com/emilkowalski/skills)，采用 MIT License，固定快照为 `78761e1b57f97dce65b983d640c70a68f39e8163`。
+- `shipswift`：安装自 [signerlabs/shipswift-skills](https://github.com/signerlabs/shipswift-skills) 的 `skills/shipswift`，包含 84 个免费 SwiftUI 配方和完整索引；该仓库 README 声明采用 MIT License，目录内许可文本取自关联的 [signerlabs/ShipSwift](https://github.com/signerlabs/ShipSwift) 主仓库，固定快照为 `b1dcfcd85dfae0202591642b8c9efe3edd32410b`。5 个 Pro 配方仅通过官方 MCP 提供，未收录在本合集。
 - `video-shotcraft`：完整安装自 [Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)，采用 Apache-2.0，固定快照为 `41ee360d82f4c491ba9d88a24a4add7d8ff1cf8b`。其音频、示例素材和镜头归属说明以目录内 `assets/audio/ATTRIBUTION.md`、`references/shots/ATTRIBUTION.md` 为准。
 - `agent-definition-guide`、`automation-guide`、`prompt-template-guide`、`script-library-guide`、`skill-rule-authoring-guide`、`workflow-guide`：安装自 [alikon-art/DeterminFlow](https://github.com/alikon-art/DeterminFlow)，固定快照为 `fe217de1e58bf53581cdfe973e134902d8ee062a`，均遵循目录内 AGPLv3。
 - [OpenMontage Skill 集](./OPENMONTAGE_SKILLS.md)：从 [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) 的 `.agents/skills` 收录 82 个实际 Skill 目录，固定快照为 `4eab34c5cfcccaa4f1970554928feccce73ee930`，均遵循目录内 AGPLv3。`gsap/` 是上游容器目录而非 Skill；`.claude/skills/video_toolkit` 与 `video-toolkit` 内容相同，因此未重复收录。12 个仅有 frontmatter 兼容问题的目录做了最小字段清理或 YAML 转义，正文未改。
