@@ -34,6 +34,7 @@
 | [prototype](./prototype/) | 构建多个真正不同的可运行 UI 方案，并通过可视化选择器比较 | 显式调用；当前项目技术栈和浏览器 |
 | [review-animations](./review-animations/) | 按严格设计工程标准专项评审动画代码 | 显式调用；待评审源码和可选浏览器证据 |
 | [ask-sonner](./ask-sonner/) | 安装、配置、样式化和排查 Sonner React Toast | React、Sonner |
+| [photo-scene-replacement](./photo-scene-replacement/) | 分析产品图的外观与结构，并生成保持产品身份、空间可信和组图一致的换景或换手提示词 | 可读取图片的模型或环境；直接改图时需图片编辑工具 |
 | [shipswift](./shipswift/) | 为 iOS/macOS 项目查找并集成生产可用的 SwiftUI 动画、图表、组件和完整功能模块配方 | Xcode、Swift、SwiftUI；免费配方无需 API key，Pro 配方需官方 MCP |
 | [video-shotcraft](./video-shotcraft/) | 用镜头配方、Remotion 示例、模板和音频资产制作电影感产品宣传视频 | Node.js、Remotion、FFmpeg；完整资源包较大 |
 | DeterminFlow 内置 Skill（6 个） | Agent 定义、自动化、提示模板、脚本库、规则和工作流配置指南 | DeterminFlow 运行时；见各目录 |
@@ -110,6 +111,7 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 显式使用 prototype 构建四种不同的 Toast 交互方案
 显式使用 review-animations 评审这次动画改动
 用 ask-sonner 排查这个 React 项目里重复出现的 Toast
+用 photo-scene-replacement 总结这组产品图的外观结构，并生成统一场景的换景提示词
 用 shipswift 给 SwiftUI 页面加入 shimmer 加载效果
 用 video-shotcraft 为桌面产品制作一支宣传视频
 使用 workflow-guide 编写 DeterminFlow 工作流
