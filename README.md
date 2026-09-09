@@ -35,6 +35,7 @@
 | [review-animations](./review-animations/) | 按严格设计工程标准专项评审动画代码 | 显式调用；待评审源码和可选浏览器证据 |
 | [ask-sonner](./ask-sonner/) | 安装、配置、样式化和排查 Sonner React Toast | React、Sonner |
 | [cut-motion](./cut-motion/) | 将本地口播素材制作成经过转写、粗剪审核、字幕或动态图形设计与校验的成片 | Python、Node.js、FFmpeg/FFprobe；完整流程按需使用 WSL2、ChatCut、HyperFrames、GSAP |
+| [历代衣冠](./lidai-yiguan/) | 生成覆盖先秦至当代的写实人像 AI 绘画提示词，包含服饰形制、发妆、环境、光影和镜头参数 | 无固定依赖；直接出图需所在平台的图像生成能力 |
 | [电商买家秀](./photo-scene-replacement/) | 分析产品图的外观、结构和材质分区，并生成保持产品身份、空间可信和组图一致的换景、换手或换色提示词 | 技术标识 `photo-scene-replacement`；可读取图片的模型或环境；直接改图时需图片编辑工具 |
 | [shipswift](./shipswift/) | 为 iOS/macOS 项目查找并集成生产可用的 SwiftUI 动画、图表、组件和完整功能模块配方 | Xcode、Swift、SwiftUI；免费配方无需 API key，Pro 配方需官方 MCP |
 | [video-shotcraft](./video-shotcraft/) | 用镜头配方、Remotion 示例、模板和音频资产制作电影感产品宣传视频 | Node.js、Remotion、FFmpeg；完整资源包较大 |
@@ -113,12 +114,17 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 显式使用 review-animations 评审这次动画改动
 用 ask-sonner 排查这个 React 项目里重复出现的 Toast
 用 cut-motion 把本地口播视频制作成带字幕和局部 MG 的成片
+用历代衣冠写一个明制仕女的写实人像提示词
 用电商买家秀总结这组产品图的外观结构，并生成统一场景的换景提示词
 用 shipswift 给 SwiftUI 页面加入 shimmer 加载效果
 用 video-shotcraft 为桌面产品制作一支宣传视频
 使用 workflow-guide 编写 DeterminFlow 工作流
 使用 video-edit 剪辑并导出产品演示视频
 ```
+
+## 原创 Skill
+
+- `lidai-yiguan`（历代衣冠）：由本仓库维护者 [LightyearXizIl](https://github.com/LightyearXizIl) 原创，采用 MIT License。
 
 ## 第三方来源与授权
 

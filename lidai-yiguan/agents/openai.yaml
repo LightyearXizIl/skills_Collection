@@ -1,0 +1,4 @@
+interface:
+  display_name: "历代衣冠"
+  short_description: "生成覆盖中国历代服饰的写实人像 AI 结构化绘画提示词"
+  default_prompt: "使用 $lidai-yiguan 为我生成一组形制准确、写实摄影感的历代人像提示词。"
