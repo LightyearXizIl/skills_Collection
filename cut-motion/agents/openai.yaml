@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cut Motion"
+  short_description: "Agent workflow for polished talking-head video editing"
+  default_prompt: "Use $cut-motion to edit my talking-head video into a polished final cut."
