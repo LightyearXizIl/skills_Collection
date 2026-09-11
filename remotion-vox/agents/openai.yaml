@@ -1,0 +1,4 @@
+interface:
+  display_name: "VoxMotion 自动剪辑"
+  short_description: "把旁白脚本制作成 Vox 风格动态图形解说视频工程"
+  default_prompt: "Use $remotion-vox to turn my narration script into a Vox-style Remotion video."

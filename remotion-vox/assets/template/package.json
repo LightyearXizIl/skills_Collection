@@ -1,0 +1,23 @@
+{
+  "name": "remotion-vox-video",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts VoxVideo out/video.mp4",
+    "still": "remotion still src/index.ts SmokeTest out/smoke.png --frame=45",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.523",
+    "@remotion/media": "4.0.523",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.523"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "5.9.3"
+  }
+}
