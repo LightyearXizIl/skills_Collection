@@ -38,6 +38,7 @@
 | [VoxMotion 自动剪辑](./remotion-vox/) | 把中英文旁白脚本制作成 Vox 风格 Remotion 动态图形解说视频，支持拆镜、图表、cutout、旁白对齐与 MP4 渲染 | Node.js、npm；内置 Remotion/React/TypeScript 工程模板，不内置 API key |
 | [历代衣冠](./lidai-yiguan/) | 生成覆盖先秦至当代的写实人像 AI 绘画提示词，包含服饰形制、发妆、环境、光影和镜头参数 | 无固定依赖；直接出图需所在平台的图像生成能力 |
 | [朝元神会实拍群像](./chaoyuan-shenhui-live-action/) | 将人物、神仙群像、天庭朝会或参考图需求扩写为真人实拍质感的生图、局部编辑与视频提示词 | 无固定依赖；参考图模式需要图片读取能力，直接生成或编辑需对应平台能力 |
+| [抖音作品包装师](./douyin-video-publish-kit/) | 分析待发布视频并生成标题、作品描述、话题标签和实际可用的 9:16 海报封面 | FFmpeg/FFprobe、视频或图像读取能力；制作海报需图像生成或编辑能力 |
 | [电商买家秀](./photo-scene-replacement/) | 分析产品图的外观、结构和材质分区，并生成保持产品身份、空间可信和组图一致的换景、换手或换色提示词 | 技术标识 `photo-scene-replacement`；可读取图片的模型或环境；直接改图时需图片编辑工具 |
 | [shipswift](./shipswift/) | 为 iOS/macOS 项目查找并集成生产可用的 SwiftUI 动画、图表、组件和完整功能模块配方 | Xcode、Swift、SwiftUI；免费配方无需 API key，Pro 配方需官方 MCP |
 | [video-shotcraft](./video-shotcraft/) | 用镜头配方、Remotion 示例、模板和音频资产制作电影感产品宣传视频 | Node.js、Remotion、FFmpeg；完整资源包较大 |
@@ -127,6 +128,7 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 用 VoxMotion 自动剪辑把这段旁白制作成 16:9 的 Vox 风格解说视频
 用历代衣冠写一个明制仕女的写实人像提示词
 用朝元神会实拍群像写一幅二十位神仙在白玉云台朝会的真人实拍提示词
+用抖音作品包装师分析这个视频并生成标题、描述、标签和 9:16 海报封面
 用电商买家秀总结这组产品图的外观结构，并生成统一场景的换景提示词
 用 shipswift 给 SwiftUI 页面加入 shimmer 加载效果
 用 video-shotcraft 为桌面产品制作一支宣传视频
@@ -147,6 +149,7 @@ python "DeepSeek_Visualmodel/eyes.py" "图片.png" --prompt "提取图中所有�
 - `lidai-yiguan`（历代衣冠）：由本仓库维护者 [LightyearXizIl](https://github.com/LightyearXizIl) 原创，采用 MIT License。
 - `remotion-vox`（VoxMotion 自动剪辑）：由本仓库维护者 [LightyearXizIl](https://github.com/LightyearXizIl) 原创，采用 MIT License。
 - `chaoyuan-shenhui-live-action`（朝元神会实拍群像）：由本仓库维护者 [LightyearXizIl](https://github.com/LightyearXizIl) 编写，采用 MIT License；风格基准仅归纳公开参考视频的视觉语法，不收录或再分发视频及其中素材。
+- `douyin-video-publish-kit`（抖音作品包装师）：由本仓库维护者 [LightyearXizIl](https://github.com/LightyearXizIl) 编写，采用 MIT License。
 
 ## 第三方来源与授权
 
