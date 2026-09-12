@@ -1,0 +1,4 @@
+interface:
+  display_name: "朝元神会实拍群像"
+  short_description: "生成真人实拍质感的中国神话朝元神会生图与视频提示词"
+  default_prompt: "使用 $chaoyuan-shenhui-live-action 为我的人物或群像创意写一份中文提示词。"
