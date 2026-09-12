@@ -1,0 +1,27 @@
+{
+  "skill_name": "story-asset-builder",
+  "version": "0.2.0",
+  "description": "通用剧本资产生成器：剧本拆解、Prompt 编译、LibTV Canvas Blueprint 画布编排。",
+  "depends_on": [
+    "LibTV skill or LibTV CLI",
+    "OpenClaw / 飞书 ClawBot / KimiClaw compatible runtime"
+  ],
+  "entry": "SKILL.md",
+  "templates": [
+    "character_sheet.md",
+    "creature_sheet.md",
+    "prop_sheet.md",
+    "vehicle_sheet.md",
+    "environment_sheet.md",
+    "color_palette.md",
+    "storyboard_grid.md",
+    "video_prompt.md"
+  ],
+  "profiles": [
+    "wansheng.yaml",
+    "default_cinematic.yaml",
+    "ancient_drama.yaml",
+    "apocalypse_thriller.yaml",
+    "cyber_city.yaml"
+  ]
+}

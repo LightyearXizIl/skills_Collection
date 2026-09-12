@@ -1,0 +1,28 @@
+使用 story-asset-builder 创建 LibTV 资产准备画布。
+
+请默认遵守 Canvas Blueprint Rule：
+1. 先拆解资产清单
+2. 再生成 Canvas Blueprint
+3. 再按 Blueprint 创建 LibTV 节点
+4. 所有节点按 6 个分区排版：
+   - 01_PROJECT_INDEX
+   - 02_STYLE_DNA
+   - 03_CHARACTERS
+   - 04_WORLD_ASSETS
+   - 05_STORYBOARD_VIDEO
+   - 99_ARCHIVE
+5. 节点命名格式必须是：序号_资产类型_资产名称_用途_v版本号
+6. 每个资产小组必须包含 PROMPT / GENERATE / QA，必要时添加 REF / V2_RETRY
+7. 禁止散乱节点、空节点、无命名节点、重复节点
+8. 创建完成后返回节点索引表
+
+项目名：【填写项目名】
+项目 Profile：【default_cinematic / wansheng / ancient_drama / apocalypse_thriller / cyber_city / 新建 Profile】
+
+剧本：
+【粘贴剧本】
+
+要求：
+- 先不要生成最终视频
+- 只创建资产准备画布
+- 所有节点必须放到 LibTV 画布上

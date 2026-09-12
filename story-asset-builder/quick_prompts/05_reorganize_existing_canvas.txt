@@ -1,0 +1,16 @@
+使用 story-asset-builder，按标准 Canvas Blueprint 重新整理当前 LibTV 画布。
+
+要求：
+1. 不要重新生成图片或视频
+2. 只做重命名、分组、重排、补充 INDEX 节点、归档废弃节点
+3. 画布分区必须整理为：
+   - 01_PROJECT_INDEX
+   - 02_STYLE_DNA
+   - 03_CHARACTERS
+   - 04_WORLD_ASSETS
+   - 05_STORYBOARD_VIDEO
+   - 99_ARCHIVE
+4. 节点命名格式必须是：序号_资产类型_资产名称_用途_v版本号
+5. 每个资产小组内部按 PROMPT → GENERATE → QA → RETRY 的顺序摆放
+6. 空节点、重复节点、失败节点移动到 99_ARCHIVE
+7. 完成后返回节点索引表和整理说明

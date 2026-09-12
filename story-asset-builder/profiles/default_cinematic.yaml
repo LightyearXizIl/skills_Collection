@@ -1,0 +1,34 @@
+profile_id: default_cinematic
+project_name: 未命名电影感项目
+profile_type: generic_cinematic
+language: zh-CN
+visual_dna:
+  world: 根据剧本自动推断
+  cinematic_refs:
+    - realistic cinematic film still
+    - natural lens depth of field
+    - restrained color grading
+  materials: []
+  colors: []
+lighting:
+  asset_sheet: Clean studio reference lighting unless the project requires a stronger style.
+  environment: Scene-specific cinematic lighting.
+default_templates:
+  character: templates/character_sheet.md
+  creature: templates/creature_sheet.md
+  prop: templates/prop_sheet.md
+  vehicle: templates/vehicle_sheet.md
+  environment: templates/environment_sheet.md
+  storyboard: templates/storyboard_grid.md
+style_constraints:
+  avoid:
+    - generic AI image look
+    - oversharpening
+    - plastic skin
+    - random costume changes
+    - inconsistent characters
+qa_focus:
+  - 角色一致性
+  - 场景可用性
+  - 道具功能准确
+  - 分镜连续性

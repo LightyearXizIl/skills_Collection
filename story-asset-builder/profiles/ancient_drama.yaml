@@ -1,0 +1,37 @@
+profile_id: ancient_drama
+project_name: 古风权谋项目
+profile_type: ancient_court_cinematic_drama
+language: zh-CN
+visual_dna:
+  world: 古风宫廷、权谋、烛光、木质建筑、丝绸服饰、真实古装剧质感
+  cinematic_refs:
+    - realistic Chinese historical drama film still
+    - warm candlelight
+    - low-saturation elegant palette
+  materials:
+    - silk
+    - gold embroidery
+    - carved wood
+    - paper window
+    - bronze candle stand
+    - rain-wet stone
+  colors:
+    - warm candle gold
+    - dark wood brown
+    - desaturated red
+    - jade green
+    - smoke grey
+lighting:
+  asset_sheet: Soft controlled studio light with subtle side rim, realistic skin texture.
+  environment: Candlelight, window-grid light, warm low-key interior, restrained contrast.
+style_constraints:
+  avoid:
+    - plastic idol-drama skin
+    - over-bright beauty filter
+    - cheap cosplay costume
+    - fantasy xianxia glow overload
+qa_focus:
+  - 古装真实质感
+  - 服饰层次
+  - 人物情绪克制
+  - 场景木质与烛光统一

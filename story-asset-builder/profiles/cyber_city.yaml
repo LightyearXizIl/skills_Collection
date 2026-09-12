@@ -1,0 +1,36 @@
+profile_id: cyber_city
+project_name: 赛博都市项目
+profile_type: cyberpunk_city_drama
+language: zh-CN
+visual_dna:
+  world: 高密度都市、霓虹、雨夜、广告屏、底层街巷、科技与贫民区混合
+  cinematic_refs:
+    - cyberpunk rainy night city
+    - cinematic anamorphic neon
+    - gritty street photography
+  materials:
+    - wet asphalt
+    - glass
+    - LED signage
+    - scratched plastic
+    - black tech fabric
+  colors:
+    - cyan neon
+    - magenta neon
+    - sodium orange
+    - deep black
+    - rain grey
+lighting:
+  asset_sheet: Controlled studio reference with subtle neon reflection if needed.
+  environment: Neon signs, wet reflections, practical street lights, strong color contrast.
+style_constraints:
+  avoid:
+    - generic clean sci-fi
+    - overly cartoon neon
+    - empty streets unless requested
+    - polished luxury tech only
+qa_focus:
+  - 城市密度
+  - 雨夜反光
+  - 科技与贫民质感混合
+  - 角色服装不漂移

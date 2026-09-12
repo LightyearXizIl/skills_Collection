@@ -1,0 +1,37 @@
+profile_id: apocalypse_thriller
+project_name: 末日密闭空间项目
+profile_type: low_budget_apocalypse_thriller
+language: zh-CN
+visual_dna:
+  world: 密闭空间、末日悬疑、低成本高张力、灰尘、旧设备、应急灯、未知威胁
+  cinematic_refs:
+    - realistic confined-space thriller
+    - low-key lighting
+    - handheld tension
+  materials:
+    - concrete
+    - rusted metal
+    - emergency plastic light
+    - dust
+    - cracked paint
+    - old radio
+  colors:
+    - cold grey
+    - emergency red
+    - dirty white
+    - rust brown
+    - sickly green
+lighting:
+  asset_sheet: Neutral studio reference for assets; environment uses low-key practical lighting.
+  environment: Flickering emergency light, flashlight beam, cold overhead light.
+style_constraints:
+  avoid:
+    - zombie cliché unless requested
+    - over-gory details
+    - clean sci-fi lab
+    - heroic action movie look
+qa_focus:
+  - 空间压迫感
+  - 道具真实可用
+  - 光源逻辑
+  - 怪物留白和悬念

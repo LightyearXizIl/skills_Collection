@@ -1,0 +1,54 @@
+profile_id: wansheng
+project_name: 万物生
+profile_type: cinematic_desert_lost_tech
+language: zh-CN
+visual_dna:
+  world: 丝路荒漠、崖壁村落、沙猎部落、古代失落科技、青铜机改
+  cinematic_refs:
+    - Dune-like desert cinematic aesthetic
+    - 35mm Kodak Vision3 film grain
+    - 古代丝路边疆民族混合审美
+  ethnicity_anchor: Central Asian / Turkic / Sogdian Silk Road mixed ethnicity
+  materials:
+    - weathered sand
+    - dark leather
+    - aged bronze patina
+    - verdigris recesses
+    - dried-blood-red cloth accents
+    - dust-coated fabric
+  colors:
+    - name: Mecha Crimson Bronze
+      hex: '#7A6845'
+    - name: Aged Gold
+      hex: '#846035'
+    - name: LED Cyan Dormant
+      hex: '#4FC3D9'
+    - name: Desert Sand
+      hex: '#C8A66A'
+    - name: Dried Blood Red
+      hex: '#5A1E17'
+lighting:
+  asset_sheet: Single-sided side-rim backlighting from camera-right at 45 degrees behind subject, no fill light, no front light, no other light sources.
+  environment: Warm harsh desert sunlight or dusty dawn haze according to scene.
+default_templates:
+  character: templates/character_sheet.md
+  creature: templates/creature_sheet.md
+  prop: templates/prop_sheet.md
+  vehicle: templates/vehicle_sheet.md
+  environment: templates/environment_sheet.md
+  storyboard: templates/storyboard_grid.md
+style_constraints:
+  avoid:
+    - pure Caucasian European faces for Sand Hunter tribe
+    - modern cyberpunk neon
+    - clean polished chrome
+    - anime/cartoon style
+    - generic fantasy armor
+    - over-saturated color
+    - obvious CGI render
+qa_focus:
+  - 族群准确性
+  - 青铜机改 DNA
+  - 版式和标签准确
+  - 角色等级差异
+  - 材质风沙感
