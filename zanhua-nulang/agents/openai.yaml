@@ -1,0 +1,4 @@
+interface:
+  display_name: "簪花女郎"
+  short_description: "生成簪花女郎金青重工服饰、花影逆光和电影近景人像提示词"
+  default_prompt: "使用 $zanhua-nulang 把我的人物设想写成一套可直接生图的中文提示词。"
