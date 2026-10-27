@@ -1,5 +1,5 @@
 ---
-name: DeepSeek_Visualmodel
+name: deepseek-visualmodel
 description: "Use when the user shares an image that the current model can't natively see, or when the user asks to analyze/describe/understand an image. Route every image through this skill — send the image path to eyes.py, which calls a vision model (default glm-4.6v-flash, FREE) via Zhipu and returns a Chinese text description. Then answer the user's question based on that description."
 ---
 

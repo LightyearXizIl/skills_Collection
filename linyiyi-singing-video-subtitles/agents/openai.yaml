@@ -1,0 +1,6 @@
+interface:
+  display_name: "林依依唱歌视频字幕"
+  short_description: "归档林依依演唱素材，逐字保留歌词并实测时间轴，生成字幕成片与验收记录"
+  default_prompt: "使用 $linyiyi-singing-video-subtitles 为林依依演唱视频加字幕，逐字保留我提供的歌词，完成时间轴复核、素材归档和成片验收。"
+policy:
+  allow_implicit_invocation: true
