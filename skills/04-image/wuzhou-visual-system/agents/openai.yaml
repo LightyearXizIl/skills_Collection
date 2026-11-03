@@ -1,0 +1,8 @@
+interface:
+  display_name: "武周视觉系统"
+  short_description: "武则天与武周世界观的角色、妆造、宫殿和MJ画面规范"
+  default_prompt: "Use $wuzhou-visual-system to create a consistent Wu Zhou visual asset and a copy-ready Midjourney prompt."
+
+policy:
+  allow_implicit_invocation: true
+

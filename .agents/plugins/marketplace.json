@@ -8,7 +8,7 @@
       "name": "yichen-grok-consult",
       "source": {
         "source": "local",
-        "path": "./plugins/yichen-grok-consult"
+        "path": "./skills/_plugins/plugins/yichen-grok-consult"
       },
       "policy": {
         "installation": "AVAILABLE",

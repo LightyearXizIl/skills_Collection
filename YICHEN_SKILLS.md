@@ -31,6 +31,6 @@
 
 ## 安装
 
-普通 Skill 可把对应 `yichen-*` 目录复制到 `~/.codex/skills/`。Grok Consult 是完整插件，不应只复制其嵌套 Skill；请按 [`plugins/yichen-grok-consult/README.zh.md`](./plugins/yichen-grok-consult/README.zh.md) 的 marketplace 安装说明操作。
+普通 Skill 可把对应 `yichen-*` 目录复制到 `~/.codex/skills/`。Grok Consult 是完整插件，不应只复制其嵌套 Skill；请按 [`plugins/yichen-grok-consult/README.zh.md`./skills/_plugins/plugins/yichen-grok-consult/README.zh.md 的 marketplace 安装说明操作。
 
 部分 Skill 依赖 macOS、浏览器登录态、第三方 CLI 或自行配置的环境变量。运行前以各目录的 `SKILL.md` 和 `README.md` 为准，不要提交真实 cookie、token、数据库密钥或个人数据。

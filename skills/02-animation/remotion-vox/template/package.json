@@ -1,0 +1,23 @@
+{
+  "name": "vox-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vox-style motion graphics video generated with Remotion",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render VoxVideo out/video.mp4",
+    "still": "remotion still VoxVideo out/frame.png",
+    "smoke": "remotion render SmokeTest out/smoke.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.523",
+    "@remotion/media-utils": "4.0.523",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.523"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}
